@@ -24,7 +24,12 @@ dist-ssr
 *.sw?
 
 # 忽略环境变量文件和图片资源
-./*.env
-./*.env.*
-./detail_1.png
-./detail_2.png
+.env
+.env.*
+!.env.example
+detail_1.png
+detail_2.png
+
+# Claude Code 工作目录
+.claude/
+
