@@ -64,7 +64,7 @@ export const mockOrderDetail2: OrderDetail = {
   storeTag: "自营",
   goodsName: "Xiaomi 蓝牙降噪耳机 Buds 5...",
   goodsImage:
-    "https://img1.baidu.com/it/u=2120978018,2830167934&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+    "https://picsum.photos/400/400?random=1",
   goodsSpec: "石墨黑 | 主动降噪款",
   quantity: 1,
   originalPrice: 399.0,
@@ -94,7 +94,7 @@ export const mockOrderDetail3: OrderDetail = {
   storeTag: "自营",
   goodsName: "三只松鼠 巨型零食大礼包 混合坚果...",
   goodsImage:
-    "https://img1.baidu.com/it/u=4256523405,3839319047&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+    "https://picsum.photos/400/400?random=2",
   goodsSpec: "缤纷果仁款 | 1.2kg",
   quantity: 1,
   originalPrice: 128.0,

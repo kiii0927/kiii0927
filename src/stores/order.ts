@@ -40,7 +40,11 @@ export const useOrderStore = defineStore("order", () => {
 
   // 切换订单数据（用于测试不同场景）
   const switchOrder = (index: number) => {
+    // 防止越界
+    if (index < 0) index = 0;
+    
     const orders = [mockOrderDetail, mockOrderDetail2, mockOrderDetail3];
+    // % 用于循环; 避免越界
     orderDetail.value = { ...orders[index % orders.length] };
   };
 

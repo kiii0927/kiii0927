@@ -13,7 +13,11 @@
       </svg>
     </div>
     <div class="status-text">{{ store.orderDetail.orderStatus }}</div>
-    <div class="pickup-info" v-if="store.orderDetail.pickupCode">
+    <div
+      class="pickup-info"
+      v-if="store.orderDetail.pickupCode"
+      @click="onCopy"
+    >
       <span class="pickup-label">取件码：</span>
       <span class="pickup-code">{{ store.orderDetail.pickupCode }}</span>
     </div>
@@ -22,7 +26,21 @@
 
 <script setup lang="ts">
 import { useOrderStore } from "@/stores/order";
+import { copyTextToClipboard } from "@/utils/web/clipboard";
+import { useToast } from "@/composables/useToast";
+
+const { showToast } = useToast();
 const store = useOrderStore();
+
+const onCopy = () => {
+  copyTextToClipboard(store.orderDetail.pickupCode)
+    .then(() => {
+      showToast("取件码已复制");
+    })
+    .catch(() => {
+      showToast("复制失败，请长按取件码手动复制");
+    });
+};
 </script>
 
 <style scoped>

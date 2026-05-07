@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
-import OrderDetail from "./views/OrderDetail.vue";
+// import OrderDetail from "./views/OrderDetail.vue";
 
 import Toast from "@/components/Toast.vue";
 import { registerToast } from "@/composables/useToast";
@@ -17,6 +17,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <OrderDetail />
+  <router-view />
   <Toast ref="toastRef" />
 </template>
