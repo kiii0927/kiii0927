@@ -1,4 +1,5 @@
 # product-details · 移动端订单详情页
+> 复制到浏览器访问：**https://kiii0927.github.io/kiii0927/**
 
 基于 **Vue 3 + TypeScript + Vite + Pinia + Vue Router** 的仿京东订单详情页 Demo。整页按移动端竖屏布局，最大宽度 450px 居中。通过 GitHub Actions 自动部署到 GitHub Pages。
 
